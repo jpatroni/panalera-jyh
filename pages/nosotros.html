@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="es">
 <head>
@@ -6,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>J&amp;H Pañalera | Nosotros</title>
 
-  <!-- link de boostra´p-->
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <!--link de mi css-->
-            <link rel="stylesheet" href="../css/styles.css">
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
@@ -33,56 +33,137 @@
   </div>
 </header>
 
-<main>
-  <div class="container">
+<main class="container my-4">
 
-    
-      <h2>Nosotros</h2>
+  <!-- ✅ BLOQUE TIPO TODDLER -->
+  <section class="nosotros-hero">
+    <div class="row g-0 align-items-stretch">
 
-      <article>
-        <h3>Nuestra historia</h3>
-        <p>
-          J&amp;H Pañalera nace para facilitar las compras del día a día con productos esenciales
-          para bebés, familias y también línea adulto.
-        </p>
+      <!-- Imagen izquierda -->
+      <div class="col-lg-6">
+        <img class="nosotros-hero-img" src="../img/banner_agosto_23-1024x453.png" alt="J&H Pañalera - Nosotros">
+      </div>
 
-        <figure>
-          <img src="../img/banner_agosto_23-1024x453.png" alt="Imagen del local o showroom">
-          <figcaption class="muted">Imagen referencial.</figcaption>
-        </figure>
-      </article>
-    
+      <!-- Texto derecha -->
+      <div class="col-lg-6">
+        <div class="nosotros-hero-text">
+          <h2 class="nosotros-title">Nosotros</h2>
 
-    
-      <h2>Misión, Visión y Valores</h2>
+          <h3 class="nosotros-subtitle">Nuestra historia</h3>
 
-      <h3>Misión</h3>
-      <p>Brindar una experiencia simple de compra con productos confiables y entregas coordinadas.</p>
+          <p>
+            En J&amp;H Pañalera sabemos que cuando llega un bebé, todo cambia.
+          </p>
 
-      <h3>Visión</h3>
-      <p>Ser una opción cercana y recomendada en la zona por variedad y buena atención.</p>
+          <p class="nosotros-muted">
+            Por eso nacimos para facilitar las compras del día a día con productos esenciales
+            para bebés, familias y también línea adulto.
+          </p>
 
-      <h3>Valores</h3>
-      <ul class="bullets">
-        <li>Cercanía</li>
-        <li>Responsabilidad</li>
-        <li>Rapidez</li>
-        <li>Calidad</li>
-      </ul>
-    
+          <p>
+            Queremos acompañarte con atención cercana, entregas coordinadas y una experiencia
+            simple de compra.
+          </p>
+        </div>
+      </div>
 
-  </div>
+    </div>
+  </section>
+
+  <!-- ✅ MISIÓN / VISIÓN / VALORES (lo tuyo, pero más prolijo) -->
+  <section class="nosotros-info mt-4">
+    <h2 class="mb-3">Misión, Visión y Valores</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="nosotros-card">
+          <h3>Misión</h3>
+          <p>Brindar una experiencia simple de compra con productos confiables y entregas coordinadas.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="nosotros-card">
+          <h3>Visión</h3>
+          <p>Ser una opción cercana y recomendada en la zona por variedad y buena atención.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="nosotros-card">
+          <h3>Valores</h3>
+          <ul class="bullets mb-0">
+            <li>Cercanía</li>
+            <li>Responsabilidad</li>
+            <li>Rapidez</li>
+            <li>Calidad</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
-<footer class="site-footer">
+<footer class="footer-jyh">
   <div class="container">
-    <p><strong>J&amp;H Pañalera</strong> — Entregas a domicilio</p>
-    <p class="small">Email: <a href="mailto:julietapatroni15@gmail.com">julietapatroni15@gmail.com</a></p>
-    <p class="small">© 2026 — PreEntrega 1</p>
+
+    <div class="footer-contenido">
+
+      <div class="footer-col">
+        <h4>J&H Pañalera</h4>
+        <p>Productos de calidad para tu bebé con entregas rápidas y atención personalizada.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contacto</h5>
+
+        <p>
+          <i class="bi bi-whatsapp footer-icon whatsapp"></i>
+          <a href="https://wa.me/5491154818933" target="_blank" rel="noopener">
+            +54 9 11 5481-8933
+          </a>
+        </p>
+
+        <p>
+          <i class="bi bi-whatsapp footer-icon whatsapp"></i>
+          <a href="https://wa.me/5491168743575" target="_blank" rel="noopener">
+            +54 9 11 6874-3575
+          </a>
+        </p>
+
+        <p>
+          <i class="bi bi-envelope footer-icon mail"></i>
+          <a href="mailto:julietapatroni15@gmail.com">
+            julietapatroni15@gmail.com
+          </a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navegación</h5>
+        <ul>
+          <!-- ✅ ESTÁS EN pages/, por eso es ../ -->
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 J&H Pañalera — Todos los derechos reservados
+    </div>
+
   </div>
 </footer>
-<!--link de js boostrap-->
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>

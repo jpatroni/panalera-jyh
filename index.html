@@ -8,11 +8,15 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
         crossorigin="anonymous">
 
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap"
+        rel="stylesheet">
 
   <!-- Tu CSS -->
   <link rel="stylesheet" href="css/styles.css">
@@ -41,21 +45,30 @@
 
 <main class="container mt-4">
 
-  <div class="row align-items-start">
+  <div class="row align-items-center">
 
-    <!-- TEXTO -->
+    <!-- TEXTO PREMIUM -->
     <div class="col-md-5">
-      <div class="parrafo-descripcion">
+      <div class="parrafo-descripcion premium-texto">
 
-        <h2>Pañales de calidad para tu bebé</h2>
+        <h2 class="titulo-premium">
+          Pañales de calidad para tu bebé
+        </h2>
 
-        <p class="parrafo_de_carrousel" id="parrafito">
-          Pañales desechables diseñados para brindar comodidad y protección,
+        <p class="descripcion-premium">
+          Diseñados para brindar comodidad y protección,
           cuentan con cintura y cierres elastizados que se adaptan perfectamente
-          al cuerpo de tu bebé. Su gel súper absorbente mantiene la piel seca
-          por hasta 12 horas, ayudando a prevenir irritaciones. Además,
-          su cubierta externa extra suave cuida la piel delicada de tu bebé
-          en cada movimiento.
+          al cuerpo de tu bebé.
+        </p>
+
+        <p class="descripcion-premium">
+          Su gel súper absorbente mantiene la piel seca
+          por hasta 12 horas, ayudando a prevenir irritaciones.
+        </p>
+
+        <p class="descripcion-premium">
+          Además, su cubierta externa extra suave cuida la piel
+          delicada de tu bebé en cada movimiento.
         </p>
 
       </div>
@@ -79,13 +92,11 @@
         <button class="carousel-control-prev" type="button"
                 data-bs-target="#carouselExample" data-bs-slide="prev">
           <span class="carousel-control-prev-icon"></span>
-          <span class="visually-hidden">Previous</span>
         </button>
 
         <button class="carousel-control-next" type="button"
                 data-bs-target="#carouselExample" data-bs-slide="next">
           <span class="carousel-control-next-icon"></span>
-          <span class="visually-hidden">Next</span>
         </button>
 
       </div>
@@ -107,14 +118,28 @@
 
       <div class="footer-col">
         <h5>Contacto</h5>
+
         <p>
-          WhatsApp:<br>
-          <a href="https://wa.me/5491154818933" target="_blank">+54 9 11 5481-8933</a><br>
-          <a href="https://wa.me/5491168743575" target="_blank">+54 9 11 6874-3575</a>
+          <i class="bi bi-whatsapp footer-icon whatsapp"></i>
+          <a href="https://wa.me/5491154818933" target="_blank">
+            +54 9 11 5481-8933
+          </a>
         </p>
-        <p>Email:<br>
-          <a href="mailto:julietapatroni15@gmail.com">julietapatroni15@gmail.com</a>
+
+        <p>
+          <i class="bi bi-whatsapp footer-icon whatsapp"></i>
+          <a href="https://wa.me/5491168743575" target="_blank">
+            +54 9 11 6874-3575
+          </a>
         </p>
+
+        <p>
+          <i class="bi bi-envelope footer-icon mail"></i>
+          <a href="mailto:julietapatroni15@gmail.com">
+            julietapatroni15@gmail.com
+          </a>
+        </p>
+
       </div>
 
       <div class="footer-col">
@@ -136,10 +161,7 @@
   </div>
 </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

@@ -8,12 +8,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>J&amp;H Pañalera | Contacto</title>
-<!-- link de boostra´p-->
 
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  
-  <!--link de mi css-->
-            <link rel="stylesheet" href="../css/styles.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons (para WhatsApp, mail, ubicación) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
@@ -36,42 +40,141 @@
   </div>
 </header>
 
-<main>
-  <div class="container">
+<main class="container my-4">
 
-    
-      <h2>Contacto</h2>
-      <p class="muted">Podés escribirnos por WhatsApp o enviarnos un mail.</p>
+  <div class="contacto-wrap">
+    <div class="row g-4 align-items-stretch">
 
-      <ul class="bullets">
-        <li>WhatsApp 1: <a href="https://wa.me/5491154818933" target="_blank" rel="noopener">+54 9 11 5481-8933</a></li>
-        <li>WhatsApp 2: <a href="https://wa.me/5491168743575" target="_blank" rel="noopener">+54 9 11 6874-3575</a></li>
-        <li>Email: <a href="mailto:julietapatroni15@gmail.com">julietapatroni15@gmail.com</a></li>
-      </ul>
-    
+      <!-- IZQUIERDA: DATOS -->
+      <div class="col-lg-4">
+        <section class="contacto-card h-100">
+          <h2 class="contacto-title">Contacto</h2>
+          <p class="contacto-subtitle">Podés escribirnos por WhatsApp o enviarnos un mail.</p>
 
-    
-      <h2>Ubicación</h2>
+          <div class="contacto-item">
+            <i class="bi bi-whatsapp contacto-icon wa"></i>
+            <div>
+              <div class="contacto-label">WhatsApp 1</div>
+              <a class="contacto-link" href="https://wa.me/5491154818933" target="_blank" rel="noopener">
+                +54 9 11 5481-8933
+              </a>
+            </div>
+          </div>
 
-      <iframe
-        class="mapa"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13150.384273470909!2d-58.6801515078942!3d-34.51312335881837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd452b3bccdb%3A0xb0f15bf735214d59!2sFarmacia%20L.A.I.%20Villa%20de%20Mayo%20SCS!5e0!3m2!1ses-419!2$ar!4v1769221066231!5m2!1ses-419!2$ar"
-        loading="lazy"
-        allowfullscreen>
-      </iframe>
-    
+          <div class="contacto-item">
+            <i class="bi bi-whatsapp contacto-icon wa"></i>
+            <div>
+              <div class="contacto-label">WhatsApp 2</div>
+              <a class="contacto-link" href="https://wa.me/5491168743575" target="_blank" rel="noopener">
+                +54 9 11 6874-3575
+              </a>
+            </div>
+          </div>
 
+          <div class="contacto-item">
+            <i class="bi bi-envelope contacto-icon mail"></i>
+            <div>
+              <div class="contacto-label">Email</div>
+              <a class="contacto-link" href="mailto:julietapatroni15@gmail.com">
+                julietapatroni15@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <hr class="contacto-sep">
+
+          <h3 class="contacto-mini-title">Ubicación</h3>
+          <div class="contacto-item">
+            <i class="bi bi-geo-alt contacto-icon geo"></i>
+            <div>
+              <div class="contacto-label">Zona</div>
+              <span class="contacto-text">Villa de Mayo (referencia)</span>
+            </div>
+          </div>
+
+        </section>
+      </div>
+
+      <!-- DERECHA: MAPA -->
+      <div class="col-lg-8">
+        <section class="contacto-card h-100">
+          <h2 class="contacto-title">Mapa</h2>
+          <p class="contacto-subtitle">Encontranos fácilmente.</p>
+
+          <iframe
+            class="mapa contacto-mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13150.384273470909!2d-58.6801515078942!3d-34.51312335881837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd452b3bccdb%3A0xb0f15bf735214d59!2sFarmacia%20L.A.I.%20Villa%20de%20Mayo%20SCS!5e0!3m2!1ses-419!2$ar!4v1769221066231!5m2!1ses-419!2$ar"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+
+        </section>
+      </div>
+
+    </div>
   </div>
+
 </main>
 
-<footer class="site-footer">
+<footer class="footer-jyh">
   <div class="container">
-    <p><strong>J&amp;H Pañalera</strong> — Entregas a domicilio</p>
-    <p class="small">© 2026 — PreEntrega 1</p>
+
+    <div class="footer-contenido">
+
+      <div class="footer-col">
+        <h4>J&H Pañalera</h4>
+        <p>Productos de calidad para tu bebé con entregas rápidas y atención personalizada.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contacto</h5>
+
+        <p>
+          <i class="bi bi-whatsapp footer-icon whatsapp"></i>
+          <a href="https://wa.me/5491154818933" target="_blank" rel="noopener">
+            +54 9 11 5481-8933
+          </a>
+        </p>
+
+        <p>
+          <i class="bi bi-whatsapp footer-icon whatsapp"></i>
+          <a href="https://wa.me/5491168743575" target="_blank" rel="noopener">
+            +54 9 11 6874-3575
+          </a>
+        </p>
+
+        <p>
+          <i class="bi bi-envelope footer-icon mail"></i>
+          <a href="mailto:julietapatroni15@gmail.com">
+            julietapatroni15@gmail.com
+          </a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navegación</h5>
+        <ul>
+          <!-- ✅ ESTÁS EN pages/, por eso es ../ -->
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 J&H Pañalera — Todos los derechos reservados
+    </div>
+
   </div>
 </footer>
-<!--link de js boostrap-->
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>

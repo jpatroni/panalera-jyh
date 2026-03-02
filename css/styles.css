@@ -24,19 +24,23 @@ body{
   background-attachment: fixed;
 }
 
-/* ===== HEADER ===== */
+/* ===== HEADER PREMIUM ===== */
 header{
   display: flex;
-  justify-content: space-between;
-  min-height: 70px;
-  background-color: rgb(206, 97, 170);
+  flex-direction: column;
   align-items: center;
-  padding: 10px;
+  justify-content: center;
+  padding: 25px 10px;
+  text-align: center;
+
+  background: linear-gradient(135deg, #ff4da6, #ff85c1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
 .logo-jyh{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .logo-jyh img{
@@ -45,8 +49,17 @@ header{
 }
 
 /* ===== TEXTOS ===== */
-h1{ font-size: 26px; }
-h2{ font-size: 22px; margin: 20px 0 10px 0; }
+h1{ 
+  font-size: 26px; 
+  color: white;
+  font-weight: 700;
+}
+
+h2{ 
+  font-size: 22px; 
+  margin: 20px 0 10px 0; 
+}
+
 p{ margin-top: 8px; }
 
 img{
@@ -62,37 +75,55 @@ img{
   margin: 0 auto;
 }
 
-/* ===== NAV ===== */
+/* ===== NAV PREMIUM ===== */
 .nav ul{
   list-style: none;
-  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 20px;
+  padding: 0;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  padding-bottom: 10px;
 }
 
 .nav li{
   display: inline-block;
-  margin-right: 15px;
 }
 
 .nav a{
+  position: relative;
   text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-family: sans-serif;
-  padding-right: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after{
+  width: 100%;
 }
 
 .nav a:hover{
-  text-decoration: underline;
-  color: white;
+  color: #ffe6f3;
 }
 
+/* ===== RESPONSIVE ===== */
 @media (max-width: 700px){
-  header{
-    flex-direction: column;
-  }
-
-  nav{
-    padding: 10px 0px;
+  .nav ul{
+    flex-wrap: wrap;
+    gap: 18px;
   }
 }
 
@@ -104,13 +135,10 @@ img{
   background: linear-gradient(90deg, #ffd6ea, #cfe9ff);
   overflow: hidden;
   margin-left: calc(-50vw + 50%);
-  margin-top: 0;
-  margin-bottom: 0;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  order: -1;
 }
 
 .banner img{
@@ -130,7 +158,7 @@ img{
   margin-top: 14px;
 }
 
-/* ===== TARJETAS DESTACADOS ===== */
+/* ===== TARJETAS ===== */
 .cards{
   list-style: none;
   margin-top: 15px;
@@ -161,7 +189,7 @@ img{
   margin-top: 15px;
 }
 
-/* ===== FOOTER ===== */
+/* ===== FOOTER ORIGINAL (NO TOCADO) ===== */
 .site-footer{
   background-color: #ffffff;
   padding: 15px 0;
@@ -174,17 +202,7 @@ img{
   color: #555555;
 }
 
-/* Flechas rosa fuerte */
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg fill='%23ff1493' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 1L3 8l8 7'/%3E%3C/svg%3E");
-}
-
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg fill='%23ff1493' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 1l8 7-8 7'/%3E%3C/svg%3E");
-}
-
-
-/* ===== FOOTER CELESTE ===== */
+/* ===== FOOTER CELESTE (TU VERSIÓN) ===== */
 .footer-jyh{
   background: linear-gradient(90deg, #cfe9ff, #a8d8ff);
   color: #003366;
@@ -240,4 +258,501 @@ img{
   font-size: 13px;
   border-top: 1px solid rgba(0,0,0,0.1);
   padding-top: 15px;
+}
+
+/* ===== TEXTO PRODUCTO ===== */
+.parrafo-descripcion{
+  background-color: rgba(255,255,255,0.85);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.parrafo-descripcion h2{
+  font-weight: 600;
+  font-size: 26px;
+  color: #ff1493;
+  margin-bottom: 15px;
+}
+
+.parrafo-descripcion p{
+  font-size: 17px;
+  line-height: 1.7;
+  color: #444444;
+}
+
+/* ===== CAROUSEL FLECHAS ===== */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg fill='%23ff1493' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 1L3 8l8 7'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg fill='%23ff1493' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 1l8 7-8 7'/%3E%3C/svg%3E");
+}
+
+/* ===== SECCION PRODUCTOS FONDO ===== */
+#seccion-productos{
+  background-image: url("../img/bannerjyh.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+#seccion-productos::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.75);
+}
+
+#seccion-productos *{
+  position: relative;
+}
+
+
+<!--responsive--->
+
+/* ===========================
+   RESPONSIVE (MÓVIL/TABLET)
+   =========================== */
+@media (max-width: 768px){
+
+  /* Header: que todo quede centrado y el menú baje */
+  header{
+    padding: 18px 10px;
+  }
+
+  .logo-jyh{
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .logo-jyh img{
+    margin-right: 0;
+  }
+
+  .nav ul{
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+
+  /* Sección productos: menos padding para que no se vea gigante */
+  #seccion-productos{
+    padding: 25px;
+  }
+
+  /* Texto del home: que no quede enorme */
+  .parrafo-descripcion{
+    padding: 15px;
+  }
+
+  .parrafo-descripcion h2{
+    font-size: 22px;
+  }
+
+  .parrafo-descripcion p{
+    font-size: 15px;
+  }
+
+  /* Cards: que ocupen todo el ancho */
+  .card{
+    width: 100%;
+  }
+
+  /* Footer: columnas una debajo de otra */
+  .footer-contenido{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-col{
+    min-width: 100%;
+  }
+}
+
+/* Extra: pantallas muy chicas */
+@media (max-width: 480px){
+  .nav ul{
+    gap: 12px;
+  }
+
+  #seccion-productos{
+    padding: 18px;
+  }
+}
+
+
+
+
+/* ===== ESTILO PREMIUM SECCIÓN PRODUCTOS ===== */
+
+#seccion-productos{
+  text-align: center;
+  color: #2c3e50; /* azul gris elegante */
+}
+
+#seccion-productos h2{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  color: #ff1493; /* rosa fuerte */
+  margin-bottom: 10px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+#seccion-productos .muted{
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+#seccion-productos p{
+  font-size: 17px;
+}
+
+.tag{
+  display: inline-block;
+  background-color: #ffffff;
+  color: #ff1493;
+  padding: 8px 18px;
+  margin: 5px;
+  border-radius: 25px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.tag:hover{
+  background-color: #ff1493;
+  color: white;
+  transform: translateY(-3px);
+}
+
+
+
+/* ===== TEXTO IMPORTANTE ===== */
+
+.premium-texto{
+  background: rgba(255,255,255,0.9);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.titulo-premium{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #ff1493;
+  margin-bottom: 15px;
+}
+
+.descripcion-premium{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* =========================
+   NOSOTROS - ESTILO TODDLER
+   ========================= */
+
+.nosotros-hero{
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.92);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+}
+
+/* Imagen grande a la izquierda */
+.nosotros-hero-img{
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Panel de texto a la derecha */
+.nosotros-hero-text{
+  padding: 32px;
+  height: 100%;
+}
+
+.nosotros-title{
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.nosotros-subtitle{
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #ff1493; /* rosa fuerte */
+}
+
+.nosotros-hero-text p{
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.nosotros-muted{
+  color: #555;
+}
+
+/* Cards de misión/visión/valores */
+.nosotros-card{
+  background: rgba(255,255,255,0.92);
+  border-radius: 14px;
+  padding: 18px 18px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  height: 100%;
+}
+
+.nosotros-card h3{
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+/* Responsive: en móvil se apila */
+@media (max-width: 991px){
+  .nosotros-hero-text{
+    padding: 22px;
+  }
+  .nosotros-title{
+    font-size: 28px;
+  }
+}
+
+
+
+/* =========================
+   RESPONSIVE NOSOTROS
+   ========================= */
+
+/* Ajuste general: que no se rompa el contenedor */
+.nosotros-hero{
+  width: 100%;
+}
+
+/* Imagen siempre bien recortada */
+.nosotros-hero-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Tablets y menos */
+@media (max-width: 991px){
+  .nosotros-hero-text{
+    padding: 22px;
+  }
+
+  .nosotros-title{
+    font-size: 26px;
+  }
+
+  .nosotros-subtitle{
+    font-size: 20px;
+  }
+
+  .nosotros-hero-text p{
+    font-size: 15px;
+  }
+
+  /* La imagen no tan alta en mobile/tablet */
+  .nosotros-hero-img{
+    min-height: 220px;
+    max-height: 260px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 576px){
+  .nosotros-hero-text{
+    padding: 18px;
+  }
+
+  .nosotros-title{
+    font-size: 24px;
+  }
+
+  .nosotros-subtitle{
+    font-size: 18px;
+  }
+
+  .nosotros-hero-text p{
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* imagen más bajita */
+  .nosotros-hero-img{
+    min-height: 180px;
+    max-height: 220px;
+  }
+}
+
+<!-- =========================
+   ESTILO PREMIUM CONTACTO
+   ========================= -->
+
+   /* =========================
+   CONTACTO - LAYOUT PRO
+   ========================= */
+
+.contacto-wrap{
+  padding: 0;
+}
+
+.contacto-card{
+  background: rgba(255,255,255,0.92);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+}
+
+.contacto-title{
+  margin: 0 0 6px 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+}
+
+.contacto-subtitle{
+  margin: 0 0 18px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.contacto-mini-title{
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+.contacto-item{
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.contacto-icon{
+  font-size: 20px;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.contacto-icon.wa{ color: #25D366; }
+.contacto-icon.mail{ color: #1061b1; }
+.contacto-icon.geo{ color: #ff1493; }
+
+.contacto-label{
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 2px;
+}
+
+.contacto-link{
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+}
+
+.contacto-link:hover{
+  text-decoration: underline;
+}
+
+.contacto-text{
+  color: #111;
+  font-weight: 600;
+}
+
+.contacto-sep{
+  margin: 16px 0;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,0.10);
+}
+
+/* Mapa */
+.contacto-mapa{
+  width: 100%;
+  height: 420px;
+  border: 0;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 991px){
+  .contacto-title{ font-size: 24px; }
+  .contacto-card{ padding: 18px; }
+  .contacto-mapa{ height: 320px; }
+}
+
+
+/* ===== CONTACTO RESPONSIVE EXTRA ===== */
+@media (max-width: 991px){
+  .contacto-card{
+    border-radius: 12px;
+  }
+  .contacto-mapa{
+    height: 300px;
+  }
+}
+
+@media (max-width: 575px){
+  .contacto-title{
+    font-size: 22px;
+  }
+  .contacto-subtitle{
+    font-size: 13px;
+  }
+  .contacto-item{
+    gap: 10px;
+  }
+  .contacto-icon{
+    font-size: 18px;
+  }
+  .contacto-mapa{
+    height: 260px;
+    border-radius: 10px;
+  }
+}
+
+/* ===== HEADER RESPONSIVE ===== */
+@media (max-width: 700px){
+  header{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .logo-jyh{
+    justify-content: center;
+  }
+
+  .nav ul{
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .nav li{
+    display: inline-block;
+    margin: 6px 10px;
+  }
 }
