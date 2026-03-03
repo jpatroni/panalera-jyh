@@ -1,7 +1,3 @@
-<!--
-  Proyecto: PreEntrega1Patroni
-  Página: productos.html
--->
 <!doctype html>
 <html lang="es">
 <head>
@@ -9,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>J&amp;H Pañalera | Productos</title>
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Bootstrap (solo para Card) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
-  <!-- ✅ Bootstrap Icons (NECESARIO para que se vean los íconos) -->
+  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- Tu CSS -->
   <link rel="stylesheet" href="../css/styles.css">
@@ -23,10 +21,10 @@
 <body>
 
 <header class="site-header">
-  <div class="container">
-    <div class="brand">
-      <h1>J&amp;H Pañalera</h1>
-      <p class="muted">Pañales (niño y adulto) • Perfumería • Juguetería de bebés</p>
+  <div class="header-inner">
+    <div class="logo-jyh">
+      <img src="../img/Diseño sin título.jpg" alt="Logo J&H Pañalera">
+      <h1 class="nombre-empresa">Pañalera J&amp;H</h1>
     </div>
 
     <nav class="nav" aria-label="Navegación principal">
@@ -40,143 +38,100 @@
   </div>
 </header>
 
-<main>
-  <div class="container">
+<main class="page">
 
-    <section class="section" id="seccion-productos">
-      <h2>Productos</h2>
-      <p class="muted">Estructura base (luego se completa con productos reales).</p>
+  <section class="section" id="seccion-productos">
+    <h2>Productos</h2>
+    <p class="muted">Estructura base (luego se completa con productos reales).</p>
 
-      <p>
-        <span class="tag">Pañales</span>
-        <span class="tag">Perfumería</span>
-        <span class="tag">Juguetería</span>
-        <span class="tag">Accesorios</span>
-      </p>
-    </section>
+    <p class="tags">
+      <span class="tag">Pañales</span>
+      <span class="tag">Perfumería</span>
+      <span class="tag">Juguetería</span>
+      <span class="tag">Accesorios</span>
+    </p>
+  </section>
 
-    <!-- ✅ GRID PARA LAS CARDS -->
-    <div class="row justify-content-center mt-4">
+  <section class="products-grid">
 
-      <!-- CARD 1 -->
-      <div class="col-md-6 d-flex justify-content-center mb-4">
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="../img/card1.png" class="img-fluid rounded-start" alt="Pañales para tu bebé">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Pañales para tu bebé</h5>
-                <p class="card-text">Contamos con todas las marcas y talles disponibles para tu bebé</p>
-                <p class="card-text"><small class="text-body-secondary">Envíos a todo el país</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- Card 1 -->
+    <article class="card product-card">
+      <img src="../img/card1.png" class="card-img-top" alt="Pañales para tu bebé">
+      <div class="card-body">
+        <h5 class="card-title">Pañales para tu bebé</h5>
+        <p class="card-text">Contamos con todas las marcas y talles disponibles para tu bebé</p>
+        <p class="card-text"><small class="text-body-secondary">Envíos a todo el país</small></p>
       </div>
+    </article>
 
-      <!-- CARD 2 -->
-      <div class="col-md-6 d-flex justify-content-center mb-4">
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="../img/card2.jpg" class="img-fluid rounded-start" alt="Alimentación y lactancia">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Alimentación y lactancia</h5>
-                <p class="card-text">Contamos con productos de alimentación y lactancia para bebés</p>
-                <p class="card-text"><small class="text-body-secondary">Envíos a todo el país</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- Card 2 -->
+    <article class="card product-card">
+      <img src="../img/card2.jpg" class="card-img-top" alt="Alimentación y lactancia">
+      <div class="card-body">
+        <h5 class="card-title">Alimentación y lactancia</h5>
+        <p class="card-text">Contamos con productos de alimentación y lactancia para bebés</p>
+        <p class="card-text"><small class="text-body-secondary">Envíos a todo el país</small></p>
       </div>
+    </article>
 
-      <!-- CARD 3 -->
-      <div class="col-md-6 d-flex justify-content-center mb-4">
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="../img/card3.png" class="img-fluid rounded-start" alt="Higiene para tu bebé">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Higiene para tu bebé</h5>
-                <p class="card-text">Contamos con toallitas, óleos, algodón y productos de cuidado personal para bebés</p>
-                <p class="card-text"><small class="text-body-secondary">Envíos a todo el país</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- Card 3 (centrada abajo) -->
+    <article class="card product-card product-card--center">
+      <img src="../img/card3.png" class="card-img-top" alt="Higiene para tu bebé">
+      <div class="card-body">
+        <h5 class="card-title">Higiene para tu bebé</h5>
+        <p class="card-text">Contamos con toallitas, óleos, algodón y productos de cuidado personal para bebés</p>
+        <p class="card-text"><small class="text-body-secondary">Envíos a todo el país</small></p>
       </div>
+    </article>
 
-    </div>
-    <!-- ✅ FIN GRID -->
+  </section>
 
-  </div>
 </main>
 
 <footer class="footer-jyh">
-  <div class="container">
+  <div class="footer-inner">
 
-    <div class="footer-contenido">
-
-      <div class="footer-col">
-        <h4>J&H Pañalera</h4>
-        <p>Productos de calidad para tu bebé con entregas rápidas y atención personalizada.</p>
-      </div>
-
-      <div class="footer-col">
-        <h5>Contacto</h5>
-
-        <p>
-          <i class="bi bi-whatsapp footer-icon whatsapp"></i>
-          <a href="https://wa.me/5491154818933" target="_blank" rel="noopener">
-            +54 9 11 5481-8933
-          </a>
-        </p>
-
-        <p>
-          <i class="bi bi-whatsapp footer-icon whatsapp"></i>
-          <a href="https://wa.me/5491168743575" target="_blank" rel="noopener">
-            +54 9 11 6874-3575
-          </a>
-        </p>
-
-        <p>
-          <i class="bi bi-envelope footer-icon mail"></i>
-          <a href="mailto:julietapatroni15@gmail.com">
-            julietapatroni15@gmail.com
-          </a>
-        </p>
-      </div>
-
-      <div class="footer-col">
-        <h5>Navegación</h5>
-        <ul>
-          <!-- ✅ ESTÁS EN pages/, por eso es ../ -->
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </div>
-
+    <div class="footer-col">
+      <h4>J&amp;H Pañalera</h4>
+      <p>Productos de calidad para tu bebé con entregas rápidas y atención personalizada.</p>
     </div>
 
-    <div class="footer-bottom">
-      © 2026 J&H Pañalera — Todos los derechos reservados
+    <div class="footer-col">
+      <h5>Contacto</h5>
+
+      <p>
+        <i class="bi bi-whatsapp footer-icon whatsapp"></i>
+        <a href="https://wa.me/5491154818933" target="_blank" rel="noopener">+54 9 11 5481-8933</a>
+      </p>
+
+      <p>
+        <i class="bi bi-whatsapp footer-icon whatsapp"></i>
+        <a href="https://wa.me/5491168743575" target="_blank" rel="noopener">+54 9 11 6874-3575</a>
+      </p>
+
+      <p>
+        <i class="bi bi-envelope footer-icon mail"></i>
+        <a href="mailto:julietapatroni15@gmail.com">julietapatroni15@gmail.com</a>
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h5>Navegación</h5>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
     </div>
 
   </div>
+
+  <div class="footer-bottom">
+    © 2026 J&amp;H Pañalera — Todos los derechos reservados
+  </div>
 </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

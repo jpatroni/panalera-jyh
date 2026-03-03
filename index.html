@@ -5,18 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>J&amp;H Pañalera | Inicio</title>
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        crossorigin="anonymous">
+  <!-- Bootstrap (solo para el Carousel) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
   <!-- Bootstrap Icons -->
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- Tu CSS -->
   <link rel="stylesheet" href="css/styles.css">
@@ -24,144 +20,117 @@
 
 <body>
 
-<header>
-
-  <!-- BANNER -->
-  <div class="logo-jyh">
-    <img src="img/Diseño sin título.jpg" alt="Banner de J&H Pañalera">
-    <h2 class="nombre-empresa">Pañalera J&H</h2>
-  </div>
-
-  <nav class="nav" aria-label="Navegación principal">
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="pages/productos.html">Productos</a></li>
-      <li><a href="pages/nosotros.html">Nosotros</a></li>
-      <li><a href="pages/contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
-
-</header>
-
-<main class="container mt-4">
-
-  <div class="row align-items-center">
-
-    <!-- TEXTO PREMIUM -->
-    <div class="col-md-5">
-      <div class="parrafo-descripcion premium-texto">
-
-        <h2 class="titulo-premium">
-          Pañales de calidad para tu bebé
-        </h2>
-
-        <p class="descripcion-premium">
-          Diseñados para brindar comodidad y protección,
-          cuentan con cintura y cierres elastizados que se adaptan perfectamente
-          al cuerpo de tu bebé.
-        </p>
-
-        <p class="descripcion-premium">
-          Su gel súper absorbente mantiene la piel seca
-          por hasta 12 horas, ayudando a prevenir irritaciones.
-        </p>
-
-        <p class="descripcion-premium">
-          Además, su cubierta externa extra suave cuida la piel
-          delicada de tu bebé en cada movimiento.
-        </p>
-
-      </div>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo-jyh">
+      <img src="img/Diseño sin título.jpg" alt="Logo J&H Pañalera">
+      <h1 class="nombre-empresa">Pañalera J&amp;H</h1>
     </div>
 
-    <!-- CARRUSEL -->
-    <div class="col-md-7">
+    <nav class="nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="pages/productos.html">Productos</a></li>
+        <li><a href="pages/nosotros.html">Nosotros</a></li>
+        <li><a href="pages/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <section class="home-layout">
+
+    <div class="premium-texto">
+      <h2 class="titulo-premium">Pañales de calidad para tu bebé</h2>
+
+      <p class="descripcion-premium">
+        Diseñados para brindar comodidad y protección, cuentan con cintura y cierres elastizados
+        que se adaptan perfectamente al cuerpo de tu bebé.
+      </p>
+
+      <p class="descripcion-premium">
+        Su gel súper absorbente mantiene la piel seca por hasta 12 horas, ayudando a prevenir irritaciones.
+      </p>
+
+      <p class="descripcion-premium">
+        Además, su cubierta externa extra suave cuida la piel delicada de tu bebé en cada movimiento.
+      </p>
+    </div>
+
+    <div class="home-carousel">
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/protect-P-x1.png" class="d-block w-100" alt="">
+            <img src="img/protect-P-x1.png" class="d-block w-100" alt="Pañales Protect Plus">
           </div>
           <div class="carousel-item">
-            <img src="img/babydry-rn.png" class="d-block w-100" alt="">
+            <img src="img/babydry-rn.png" class="d-block w-100" alt="Pañales Baby Dry RN">
           </div>
           <div class="carousel-item">
-            <img src="img/baby-sec-XG.png" class="d-block w-100" alt="">
+            <img src="img/baby-sec-XG.png" class="d-block w-100" alt="Pañales Baby Sec XG">
           </div>
         </div>
 
-        <button class="carousel-control-prev" type="button"
-                data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
         </button>
 
-        <button class="carousel-control-next" type="button"
-                data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
         </button>
-
       </div>
+    </div>
+
+  </section>
+</main>
+
+<footer class="footer-jyh">
+  <div class="footer-inner">
+
+    <div class="footer-col">
+      <h4>J&amp;H Pañalera</h4>
+      <p>Productos de calidad para tu bebé con entregas rápidas y atención personalizada.</p>
+    </div>
+
+    <div class="footer-col">
+      <h5>Contacto</h5>
+
+      <p>
+        <i class="bi bi-whatsapp footer-icon whatsapp"></i>
+        <a href="https://wa.me/5491154818933" target="_blank" rel="noopener">+54 9 11 5481-8933</a>
+      </p>
+
+      <p>
+        <i class="bi bi-whatsapp footer-icon whatsapp"></i>
+        <a href="https://wa.me/5491168743575" target="_blank" rel="noopener">+54 9 11 6874-3575</a>
+      </p>
+
+      <p>
+        <i class="bi bi-envelope footer-icon mail"></i>
+        <a href="mailto:julietapatroni15@gmail.com">julietapatroni15@gmail.com</a>
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h5>Navegación</h5>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="pages/productos.html">Productos</a></li>
+        <li><a href="pages/nosotros.html">Nosotros</a></li>
+        <li><a href="pages/contacto.html">Contacto</a></li>
+      </ul>
     </div>
 
   </div>
 
-</main>
-
-<footer class="footer-jyh">
-  <div class="container">
-
-    <div class="footer-contenido">
-
-      <div class="footer-col">
-        <h4>J&H Pañalera</h4>
-        <p>Productos de calidad para tu bebé con entregas rápidas y atención personalizada.</p>
-      </div>
-
-      <div class="footer-col">
-        <h5>Contacto</h5>
-
-        <p>
-          <i class="bi bi-whatsapp footer-icon whatsapp"></i>
-          <a href="https://wa.me/5491154818933" target="_blank">
-            +54 9 11 5481-8933
-          </a>
-        </p>
-
-        <p>
-          <i class="bi bi-whatsapp footer-icon whatsapp"></i>
-          <a href="https://wa.me/5491168743575" target="_blank">
-            +54 9 11 6874-3575
-          </a>
-        </p>
-
-        <p>
-          <i class="bi bi-envelope footer-icon mail"></i>
-          <a href="mailto:julietapatroni15@gmail.com">
-            julietapatroni15@gmail.com
-          </a>
-        </p>
-
-      </div>
-
-      <div class="footer-col">
-        <h5>Navegación</h5>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="pages/productos.html">Productos</a></li>
-          <li><a href="pages/nosotros.html">Nosotros</a></li>
-          <li><a href="pages/contacto.html">Contacto</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      © 2026 J&H Pañalera — Todos los derechos reservados
-    </div>
-
+  <div class="footer-bottom">
+    © 2026 J&amp;H Pañalera — Todos los derechos reservados
   </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
