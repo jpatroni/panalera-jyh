@@ -1,0 +1,68 @@
+@media (max-width: 900px) {
+  .home-layout {
+    flex-direction: column;
+  }
+
+  .nosotros-hero {
+    flex-direction: column;
+  }
+
+  .nosotros-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contacto-layout {
+    flex-direction: column;
+  }
+
+  .contacto-mapa {
+    height: 320px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card--center {
+    grid-column: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .nombre-empresa {
+    font-size: 24px;
+  }
+
+  .titulo-premium {
+    font-size: 24px;
+  }
+
+  #seccion-productos h2 {
+    font-size: 26px;
+  }
+
+  .contacto-title {
+    font-size: 22px;
+  }
+
+  .contacto-mapa {
+    height: 260px;
+  }
+}
+
+@media (max-width: 520px) {
+  .btn-jyh {
+    min-width: 145px;
+    padding: 0.65em 1em;
+  }
+
+  .btn-text {
+    font-size: 0.95rem;
+  }
+
+  .btn-drawer {
+    font-size: 0.72rem;
+    padding: 0.3em 0.8em;
+  }
+}

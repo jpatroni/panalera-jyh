@@ -1,0 +1,116 @@
+/* ===== VARIABLES ===== */
+$font-main: 'Quicksand', sans-serif;
+
+$color-text: #1a1a1a;
+$color-white: #fff;
+$color-black-soft: #111;
+$color-muted: #555;
+$color-muted-light: #777;
+$color-description: #444;
+
+$color-pink-main: #ff1493;
+$color-pink-start: #ff4da6;
+$color-pink-end: #ff85c1;
+$color-pink-soft: #ffe6f3;
+
+$color-blue-dark: #003366;
+$color-blue-soft-1: #cfe9ff;
+$color-blue-soft-2: #a8d8ff;
+
+$color-whatsapp: #25D366;
+$color-whatsapp-footer: #d325c4;
+$color-mail: #1061b1;
+
+$shadow-header: 0 4px 15px rgba(0,0,0,0.15);
+$shadow-soft: 0 10px 24px rgba(0,0,0,0.06);
+$shadow-medium: 0 12px 28px rgba(0,0,0,0.08);
+$shadow-strong: 0 14px 30px rgba(0,0,0,0.08);
+
+$radius-sm: 12px;
+$radius-md: 14px;
+$radius-lg: 18px;
+
+$container-width: min(980px, 92%);
+
+/* ===== MIXINS ===== */
+@mixin card($bg: rgba(255,255,255,0.92), $radius: 14px, $shadow: 0 10px 24px rgba(0,0,0,0.06)) {
+  background: $bg;
+  border-radius: $radius;
+  box-shadow: $shadow;
+}
+
+@mixin flex-center($gap: 0) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+
+/* ===== ANIMACION ===== */
+@keyframes aparecerSuave {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESETS ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: $font-main;
+  color: $color-text;
+  line-height: 1.5;
+  background-image: url("../img/fondobebe.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* ===== LAYOUT GENERAL ===== */
+.page {
+  width: $container-width;
+  margin: 24px auto;
+}
+
+/* ===== TEXTOS ===== */
+h2 {
+  font-size: 22px;
+  margin: 0 0 12px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.muted {
+  color: $color-muted;
+}
+
+.section {
+  @include card(rgba(255,255,255,0.90), $radius-md, $shadow-soft);
+  border: 1px solid rgba(0,0,0,0.10);
+  padding: 18px;
+}
+
+.bullets {
+  padding-left: 20px;
+  margin-top: 10px;
+}

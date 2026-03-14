@@ -1,0 +1,144 @@
+.site-header {
+  background: linear-gradient(135deg, $color-pink-start, $color-pink-end);
+  box-shadow: $shadow-header;
+  padding: 22px 10px;
+}
+
+.header-inner {
+  width: $container-width;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo-jyh {
+  @include flex-center(10px);
+
+  img {
+    height: 42px;
+    width: auto;
+    display: block;
+  }
+}
+
+.nombre-empresa {
+  font-size: 28px;
+  color: $color-white;
+  font-weight: 700;
+  animation: aparecerSuave 0.9s ease;
+}
+
+.nav {
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    padding: 12px 0 10px 0;
+    margin: 14px 0 0 0;
+    border-bottom: 2px solid rgba(255,255,255,0.30);
+    flex-wrap: wrap;
+  }
+
+  a {
+    position: relative;
+    text-decoration: none;
+    color: $color-white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.25s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0%;
+      height: 2px;
+      background-color: $color-white;
+      transition: width 0.25s ease;
+    }
+
+    &:hover {
+      color: $color-pink-soft;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+/* ===== FOOTER ===== */
+.footer-jyh {
+  background: linear-gradient(90deg, $color-blue-soft-1, $color-blue-soft-2);
+  color: $color-blue-dark;
+  padding: 40px 0 20px 0;
+  margin-top: 30px;
+}
+
+.footer-inner {
+  width: $container-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+
+  h4,
+  h5 {
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 6px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-blue-dark;
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-icon {
+  margin-right: 8px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.whatsapp {
+  color: $color-whatsapp-footer;
+}
+
+.mail {
+  color: $color-mail;
+}
+
+.footer-bottom {
+  width: $container-width;
+  margin: 16px auto 0 auto;
+  text-align: center;
+  font-size: 13px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 15px;
+}
